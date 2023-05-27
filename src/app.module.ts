@@ -12,11 +12,11 @@ import configuration from './config/configuration';
 @Module({
   imports: [
     ConfigModule.forRoot({ load: [configuration] }),
-    //    MongooseModule.forRoot(process.env.MONGO_CONECTION_STRING),
-    //    ProductsModule,
-    //    ProducersModule,
-    //    OrdersModule,
-    //    CustomersModule,
+    MongooseModule.forRoot(process.env.MONGO_CONECTION_STRING),
+    ProductsModule,
+    ProducersModule,
+    OrdersModule,
+    CustomersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
