@@ -8,9 +8,11 @@ export type OrderDocument = Order & Document;
 export class Order {
   @Prop()
   customerId: mongoose.Types.ObjectId;
+  @Prop()
+  producerId: mongoose.Types.ObjectId;
 
   @Prop()
-  producer: IOrderString[];
+  products: IOrderString[];
 }
 
 export const OrderSchema = SchemaFactory.createForClass(Order);

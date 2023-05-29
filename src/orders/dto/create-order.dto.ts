@@ -6,5 +6,6 @@ export interface IOrderString {
 }
 export class CreateOrderDto {
   readonly customerID: string;
+  readonly producerID: string;
   readonly order: IOrderString[];
 }

@@ -8,25 +8,35 @@ import { Customer, CustomerDocument } from './schemas/customer.schema';
 export class CustomersService {
   //inject mongo db model
   constructor(
-    @InjectModel(Customer.name) private productModel: Model<CustomerDocument>,
+    @InjectModel(Customer.name) private customerModel: Model<CustomerDocument>,
   ) {}
 
   async getAll(): Promise<Customer[]> {
-    return this.productModel.find().exec();
+    return this.customerModel.find().exec();
   }
 
-  async getById(id: string): Promise<Customer> {
-    return this.productModel.findById(id);
+  async getByName(name: string): Promise<Customer> {
+    return this.customerModel.findOne({ name: name }).exec();
+  }
+  async create(customerDto: CreateUpdateCustomerDto): Promise<Customer> {
+    const newProduct = new this.customerModel(customerDto);
+    return newProduct.save();
   }
   async update(
     name: string,
     customerDto: CreateUpdateCustomerDto,
   ): Promise<Customer> {
-    return this.productModel.findOneAndUpdate({ name: name }, customerDto, {
+    const exist = await this.customerModel.findOne({ name: name }).exec();
+    if (!exist) {
+      const newProduct = new this.customerModel(customerDto);
+      return newProduct.save();
+    }
+
+    return this.customerModel.findOneAndUpdate({ name: name }, customerDto, {
       new: true,
     });
   }
   async remove(id: string): Promise<Customer> {
-    return this.productModel.findByIdAndRemove(id);
+    return this.customerModel.findByIdAndRemove(id);
   }
 }

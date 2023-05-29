@@ -21,7 +21,7 @@ export class ProductsService {
     return this.productModel.find().exec();
   }
   async getById(id: string): Promise<Product> {
-    if (mongoose.isValidObjectId(id))
+    if (!mongoose.isValidObjectId(id))
       throw new NotFoundException('Id of product is incorrect');
 
     return this.productModel.findById(id);

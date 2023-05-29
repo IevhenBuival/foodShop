@@ -9,8 +9,14 @@ import { CustomersModule } from './customers/customers.module';
 
 import { ConfigModule } from '@nestjs/config';
 import configuration from './config/configuration';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
 @Module({
   imports: [
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'client'),
+      exclude: ['/api/(.*)'],
+    }),
     ConfigModule.forRoot({ load: [configuration] }),
     MongooseModule.forRoot(process.env.MONGO_CONECTION_STRING),
     ProductsModule,
