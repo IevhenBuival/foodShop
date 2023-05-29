@@ -1,12 +1,12 @@
 <p align="center">
   <span><a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-  <a href="http://react.dev/" target="blank"><img src=" https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="200" alt="Nest Logo" /></a>
+  <a href="http://react.dev/" target="blank"><img src=" https:/react.dev/commons/a/a7/React-icon.svg" width="200" alt="React Logo" /></a>
  </span>
 </p>
 
 ## Description
 
-[You can try link](foodshopnest.azurewebsites.net) app deployed on Azure portal(free account).
+[You can try link https://foodshopnest.azurewebsites.net/](https://foodshopnest.azurewebsites.net/) app deployed on Azure portal(free account).
 
 ## Installation
 
