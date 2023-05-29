@@ -1,15 +1,44 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <span><a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="http://react.dev/" target="blank"><img src=" https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="200" alt="Nest Logo" /></a>
+ </span>
 </p>
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[You can try link](foodshopnest.azurewebsites.net) app deployed on Azure portal(free account).
 
 ## Installation
 
+In main directory maintain "app" folder this is client app source.
+You have build client manualy by run build. When it will be done you may start server part.
+For server you have set envirionment variebles (for development in ".env" file)
+MONGO_CONECTION_STRING = mongodb+srv://<login>:<password>@cluster0.vlijgko.mongodb.net/<db_name>?retryWrites=true&w=majority
+PORT=5000
+if you want use another port for development change proxy settings in package.json in "app" folder
+
+### Server
+
 ```bash
 $ npm install
+```
+
+### Client
+
+```bash
+$ cd app
+$ npm install
+```
+
+### Running Client
+
+```bash
+# production mode
+$ cd app
+$ npm run build
+# development watch mode
+$ cd app
+$ npm start
 ```
 
 ## Running the app
@@ -25,7 +54,7 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+## Test server
 
 ```bash
 # unit tests
