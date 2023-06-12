@@ -15,8 +15,12 @@ import { join } from 'path';
   imports: [
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'client'),
-      exclude: ['/api/(.*)'],
+      exclude: ['/api/(.*)', '/images/(.*)'],
     }),
+    /*ServeStaticModule.forRoot({
+      rootPath: join(__dirname + 'images', '..', 'images'),
+      exclude: ['/api/(.*)', '/images/(.*)'],
+    }),*/
     ConfigModule.forRoot({ load: [configuration] }),
     MongooseModule.forRoot(process.env.MONGO_CONECTION_STRING),
     ProductsModule,

@@ -1,33 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d123ea1.css",
-    "main.js": "/static/js/main.3b4b925e.js",
+    "main.css": "/static/css/main.5a7f8f09.css",
+    "main.js": "/static/js/main.187ff7bb.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/home soup.jpg": "/static/media/home soup.71d8e4ac454123f2de70.jpg",
-    "static/media/burger menu.jpg": "/static/media/burger menu.a752a4af0190f81ef733.jpg",
-    "static/media/chicken in sauce.jpg": "/static/media/chicken in sauce.67bfe3ca5a0c21818c3f.jpg",
-    "static/media/steak.jpg": "/static/media/steak.ccd75cc9de49bb8aa86d.jpg",
-    "static/media/cinnamon buns.jpg": "/static/media/cinnamon buns.7b6582c99c9d15cb69b0.jpg",
-    "static/media/grilled vegetables.jpg": "/static/media/grilled vegetables.15738c5007e8fe7e77d1.jpg",
-    "static/media/green salad.jpg": "/static/media/green salad.048080c8bfd07fb7c629.jpg",
-    "static/media/fries.jpg": "/static/media/fries.a5538bcf414baac26d23.jpg",
-    "static/media/grilled ribs.jpg": "/static/media/grilled ribs.e59fbfde6cca048c06cb.jpg",
-    "static/media/pumpkin soup.jpg": "/static/media/pumpkin soup.fb7e5b988e7408f11287.jpg",
-    "static/media/feta salad.jpg": "/static/media/feta salad.860fbca1a91f624a5831.jpg",
-    "static/media/potato with fat.jpg": "/static/media/potato with fat.fb8f48c0bf7233227907.jpg",
-    "static/media/mix roll.jpg": "/static/media/mix roll.80d6a9f959a6ea7f3993.jpg",
-    "static/media/chicken.jpg": "/static/media/chicken.e7eb8d5e395b38935cf9.jpg",
-    "static/media/yougurt.jpg": "/static/media/yougurt.4e304927628432fbe726.jpg",
-    "static/media/cheesecake.jpg": "/static/media/cheesecake.3533e6c8d62bd163f081.jpg",
-    "static/media/rain_bk3.png": "/static/media/rain_bk3.af6155f36cbc5143974e.png",
-    "static/media/pizza.jpg": "/static/media/pizza.35112f775f1518e2f157.jpg",
     "index.html": "/index.html",
-    "main.8d123ea1.css.map": "/static/css/main.8d123ea1.css.map",
-    "main.3b4b925e.js.map": "/static/js/main.3b4b925e.js.map",
+    "main.5a7f8f09.css.map": "/static/css/main.5a7f8f09.css.map",
+    "main.187ff7bb.js.map": "/static/js/main.187ff7bb.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d123ea1.css",
-    "static/js/main.3b4b925e.js"
+    "static/css/main.5a7f8f09.css",
+    "static/js/main.187ff7bb.js"
   ]
 }

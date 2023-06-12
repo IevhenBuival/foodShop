@@ -6,6 +6,10 @@
 
 ## Description
 
+Full Stack pet project.
+Food order site made on React with Typescript.
+Backend: NestJs, MongoDB, Node.js
+
 [You can try link https://foodshopnest.azurewebsites.net/](https://foodshopnest.azurewebsites.net/) app deployed on Azure portal(free account).
 
 ## Installation
