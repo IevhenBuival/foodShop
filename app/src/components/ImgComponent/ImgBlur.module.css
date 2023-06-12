@@ -1,0 +1,19 @@
+.blur_img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+
+.img {
+  display: block;
+  object-position: center;
+  object-fit: cover;
+  opacity: 0;
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+
+.loaded {
+  opacity: 1;
+}

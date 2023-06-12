@@ -1,0 +1,33 @@
+.ShopsPanel {
+  flex-basis: 30%;
+}
+.Orders {
+  flex-basis: 80%;
+}
+.FoodsPanel {
+  flex-basis: 70%;
+}
+.OrderTable {
+  flex-basis: 60%;
+}
+.Orders,
+.ShopsPanel,
+.FoodsPanel {
+  overflow-y: auto;
+}
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 676px) {
+  .Row {
+    flex-direction: column;
+  }
+}
+.Col {
+  display: flex;
+  flex-direction: column;
+}
+.PageContainer {
+  min-height: 0;
+}
